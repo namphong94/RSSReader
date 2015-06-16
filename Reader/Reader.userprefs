@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Reader\Reader.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Reader\MainActivity.cs">
+    <Files>
+      <File FileName="Reader\RssAdapter.cs" Line="52" Column="4" />
+      <File FileName="Reader\MainActivity.cs" Line="28" Column="47" />
+      <File FileName="Reader\RSS.cs" Line="70" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Reader AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

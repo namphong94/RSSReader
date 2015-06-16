@@ -1,0 +1,17 @@
+C:\Users\duutran\Documents\Projects\Reader\Reader\bin\Release\Reader.dll
+C:\Users\duutran\Documents\Projects\Reader\Reader\bin\Release\Reader.pdb
+C:\Users\duutran\Documents\Projects\Reader\Reader\bin\Release\com.companyname.reader.apk
+C:\Users\duutran\Documents\Projects\Reader\Reader\bin\Release\com.companyname.reader-Signed.apk
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\Reader.dll
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\Reader.pdb
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\android\bin\com.companyname.reader.apk
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\res\layout\main.xml
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\res\values\strings.xml
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\res\drawable-hdpi\icon.png
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\res\drawable-mdpi\icon.png
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\res\drawable-xhdpi\icon.png
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\res\drawable-xxhdpi\icon.png
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\res\drawable-xxxhdpi\icon.png
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\res\layout\rss_layout.xml
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\R.cs.flag
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Release\uploadflags.txt
