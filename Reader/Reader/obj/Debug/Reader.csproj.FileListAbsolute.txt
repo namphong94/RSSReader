@@ -17,3 +17,6 @@ C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Debug\R.cs.flag
 C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Debug\uploadflags.txt
 C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Debug\res\layout\rss_layout.xml
 C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Debug\res\layout\descriptionlayout.xml
+C:\Users\duutran\Documents\Projects\Reader\Reader\bin\Debug\Newtonsoft.Json.dll
+C:\Users\duutran\Documents\Projects\Reader\Reader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\duutran\Documents\Projects\Reader\Reader\obj\Debug\Reader.csprojResolveAssemblyReference.cache

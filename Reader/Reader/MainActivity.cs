@@ -11,6 +11,7 @@ using System.Xml;
 using Reader;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace Reader
 {
@@ -47,12 +48,12 @@ namespace Reader
 			rssListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
 				//string selectedfromlist = rssListView.GetItemAtPosition (e.Position).ToString ();
 				string show = feeds[e.Position].Description.Replace("\\<.*?>","");
-				Toast.MakeText(this,show,ToastLength.Short).Show();
-
+				//Toast.MakeText(this,show,ToastLength.Short).Show();
 
 				Intent intent = new Intent(this,typeof(DescriptionActivity));
-				intent.PutExtra(feeds[e.Position].Description,"Data");
-				intent.PutExtra(feeds[e.Position].Link,"Link");
+				//intent.PutExtra(feeds[e.Position].Description,"Data");
+				//intent.PutExtra(feeds[e.Position].Link,"Link");
+				intent.PutExtra("feed",JsonConvert.SerializeObject(feeds[e.Position]));
 				StartActivity(intent);
 			};
 

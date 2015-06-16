@@ -10,13 +10,14 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Newtonsoft.Json;
 
 namespace Reader
 {
 	[Activity (Label = "DescriptionActivity")]			
 	public class DescriptionActivity : Activity
 	{
-		int count = 1;
+		RssFeed feed;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -25,6 +26,9 @@ namespace Reader
 			SetContentView(Resource.Layout.descriptionLayout);
 
 			TextView descriptionRSS = FindViewById<TextView> (Resource.Id.description);
+			feed = JsonConvert.DeserializeObject<RssFeed> (Intent.GetStringExtra ("feed"));
+			descriptionRSS.Text = feed.Description.ToString ();
+
 			
 		}
 	}
