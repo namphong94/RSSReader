@@ -1,0 +1,9 @@
+C:\Users\phongpham\Documents\Projects\InternetCheck\InternetCheck.UITests\bin\Debug\InternetCheck.UITests.dll
+C:\Users\phongpham\Documents\Projects\InternetCheck\InternetCheck.UITests\bin\Debug\InternetCheck.UITests.pdb
+C:\Users\phongpham\Documents\Projects\InternetCheck\InternetCheck.UITests\bin\Debug\nunit.framework.dll
+C:\Users\phongpham\Documents\Projects\InternetCheck\InternetCheck.UITests\bin\Debug\Xamarin.UITest.dll
+C:\Users\phongpham\Documents\Projects\InternetCheck\InternetCheck.UITests\bin\Debug\nunit.framework.xml
+C:\Users\phongpham\Documents\Projects\InternetCheck\InternetCheck.UITests\bin\Debug\Xamarin.UITest.xml
+C:\Users\phongpham\Documents\Projects\InternetCheck\InternetCheck.UITests\obj\Debug\InternetCheck.UITests.csprojResolveAssemblyReference.cache
+C:\Users\phongpham\Documents\Projects\InternetCheck\InternetCheck.UITests\obj\Debug\InternetCheck.UITests.dll
+C:\Users\phongpham\Documents\Projects\InternetCheck\InternetCheck.UITests\obj\Debug\InternetCheck.UITests.pdb

@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="InternetCheck\InternetCheck.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="InternetCheck\MainActivity.cs">
+    <Files>
+      <File FileName="InternetCheck\MainActivity.cs" Line="40" Column="5" />
+      <File FileName="InternetCheck\Properties\AndroidManifest.xml" Line="6" Column="12" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
