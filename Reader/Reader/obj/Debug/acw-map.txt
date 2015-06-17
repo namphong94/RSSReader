@@ -10,3 +10,7 @@ Reader.DescriptionActivity, Reader;md51dea1522efb0d0a9fc52c354b9215c55.Descripti
 Reader.DescriptionActivity, Reader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51dea1522efb0d0a9fc52c354b9215c55.DescriptionActivity
 Reader.DescriptionActivity;md51dea1522efb0d0a9fc52c354b9215c55.DescriptionActivity
 reader.DescriptionActivity;md51dea1522efb0d0a9fc52c354b9215c55.DescriptionActivity
+Reader.webViewActivity, Reader;md51dea1522efb0d0a9fc52c354b9215c55.webViewActivity
+Reader.webViewActivity, Reader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51dea1522efb0d0a9fc52c354b9215c55.webViewActivity
+Reader.webViewActivity;md51dea1522efb0d0a9fc52c354b9215c55.webViewActivity
+reader.webViewActivity;md51dea1522efb0d0a9fc52c354b9215c55.webViewActivity

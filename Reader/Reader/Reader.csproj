@@ -55,6 +55,7 @@
     <Compile Include="RssFeed.cs" />
     <Compile Include="RssAdapter.cs" />
     <Compile Include="DescriptionActivity.cs" />
+    <Compile Include="webViewActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -72,6 +73,7 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Rss_layout.axml" />
     <AndroidResource Include="Resources\layout\descriptionLayout.axml" />
+    <AndroidResource Include="Resources\layout\webviewLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

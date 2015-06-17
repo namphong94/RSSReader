@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,13 +22,17 @@ namespace Reader
 			base.OnCreate (bundle);
 
 			// Create your application here
-			SetContentView(Resource.Layout.descriptionLayout);
+			SetContentView (Resource.Layout.descriptionLayout);
 
 			TextView descriptionRSS = FindViewById<TextView> (Resource.Id.description);
 			feed = JsonConvert.DeserializeObject<RssFeed> (Intent.GetStringExtra ("feed"));
 			descriptionRSS.Text = feed.Description.ToString ();
 
-			
+			descriptionRSS.Click +=	delegate {
+				Intent intent = new Intent (this, typeof(webViewActivity));
+				intent.PutExtra ("link", JsonConvert.SerializeObject (feed));
+				StartActivity (intent);
+			};
 		}
 	}
 }

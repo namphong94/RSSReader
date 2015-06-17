@@ -50,7 +50,7 @@ namespace Reader
 				string show = feeds[e.Position].Description.Replace("\\<.*?>","");
 				//Toast.MakeText(this,show,ToastLength.Short).Show();
 
-				Intent intent = new Intent(this,typeof(DescriptionActivity));
+				Intent intent = new Intent(this,typeof(webViewActivity));
 				//intent.PutExtra(feeds[e.Position].Description,"Data");
 				//intent.PutExtra(feeds[e.Position].Link,"Link");
 				intent.PutExtra("feed",JsonConvert.SerializeObject(feeds[e.Position]));

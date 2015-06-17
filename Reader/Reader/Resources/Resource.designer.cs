@@ -72,6 +72,9 @@ namespace Reader
 			// aapt resource value: 0x7f060000
 			public const int description = 2131099648;
 			
+			// aapt resource value: 0x7f060003
+			public const int rssWebview = 2131099651;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -93,6 +96,9 @@ namespace Reader
 			
 			// aapt resource value: 0x7f030002
 			public const int Rss_layout = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int webviewLayout = 2130903043;
 			
 			static Layout()
 			{
