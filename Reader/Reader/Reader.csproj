@@ -46,6 +46,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -56,6 +59,7 @@
     <Compile Include="RssAdapter.cs" />
     <Compile Include="DescriptionActivity.cs" />
     <Compile Include="webViewActivity.cs" />
+    <Compile Include="MyActionBarDrawerToggle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -74,6 +78,14 @@
     <AndroidResource Include="Resources\layout\Rss_layout.axml" />
     <AndroidResource Include="Resources\layout\descriptionLayout.axml" />
     <AndroidResource Include="Resources\layout\webviewLayout.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\makefg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_navigation_drawer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Version>22.2.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
 </Project>

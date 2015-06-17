@@ -45,10 +45,16 @@ namespace Reader
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int ic_navigation_drawer = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int monoandroidsplash = 2130837505;
+			public const int Icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int makefg = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int monoandroidsplash = 2130837507;
 			
 			static Drawable()
 			{
@@ -63,17 +69,26 @@ namespace Reader
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int RssView = 2131099649;
+			// aapt resource value: 0x7f060003
+			public const int RssView = 2131099651;
+			
+			// aapt resource value: 0x7f060005
+			public const int TitleText = 2131099653;
 			
 			// aapt resource value: 0x7f060002
-			public const int TitleText = 2131099650;
+			public const int content_frame = 2131099650;
 			
 			// aapt resource value: 0x7f060000
 			public const int description = 2131099648;
 			
-			// aapt resource value: 0x7f060003
-			public const int rssWebview = 2131099651;
+			// aapt resource value: 0x7f060004
+			public const int leftListView = 2131099652;
+			
+			// aapt resource value: 0x7f060001
+			public const int myDrawer = 2131099649;
+			
+			// aapt resource value: 0x7f060006
+			public const int rssWebview = 2131099654;
 			
 			static Id()
 			{
@@ -119,8 +134,14 @@ namespace Reader
 			// aapt resource value: 0x7f040002
 			public const int channel = 2130968578;
 			
+			// aapt resource value: 0x7f040004
+			public const int close_drawer = 2130968580;
+			
 			// aapt resource value: 0x7f040000
 			public const int hello = 2130968576;
+			
+			// aapt resource value: 0x7f040003
+			public const int open_drawer = 2130968579;
 			
 			static String()
 			{

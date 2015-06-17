@@ -1,11 +1,26 @@
 ﻿<Properties StartupItem="Reader\Reader.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Reader\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
+      <File FileName="Reader\DescriptionActivity.cs" Line="35" Column="6" />
+      <File FileName="Reader\webViewActivity.cs" Line="27" Column="81" />
       <File FileName="Reader\RssAdapter.cs" Line="52" Column="4" />
-      <File FileName="Reader\MainActivity.cs" Line="28" Column="47" />
-      <File FileName="Reader\RSS.cs" Line="70" Column="1" />
+      <File FileName="Reader\MainActivity.cs" Line="53" Column="59" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Reader" expanded="True">
+            <Node name="Reader" expanded="True">
+              <Node name="ComponentReferenceFolder" selected="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
