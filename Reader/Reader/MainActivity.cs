@@ -18,13 +18,14 @@ using Android.Support.V4.App;
 
 namespace Reader
 {
-	[Activity (Label = "Reader", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "Reader", MainLauncher = true, Icon = "@drawable/icon",Theme ="@style/CustomActionBarTheme")]
 	public class MainActivity : Activity
 	{
 		private ListView rssListView;
 		private string channel = "http://vnexpress.net/rss/tin-moi-nhat.rss";
 		private RSS rssReader= new RSS();
 		List<RssFeed> feeds =new List<RssFeed>();
+
 		DrawerLayout mDrawerLayout;
 		List<string> mLeftitem = new List<string>();
 		ListView mLeftDrawer;
@@ -46,7 +47,6 @@ namespace Reader
 			mDrawerLayout = FindViewById<DrawerLayout> (Resource.Id.myDrawer);
 			mLeftDrawer = FindViewById<ListView> (Resource.Id.leftListView);
 
-
 			mLeftitem.Add ("VnExpress");
 			mLeftitem.Add ("ZingVN");
 			mLeftitem.Add ("Genk");
@@ -59,6 +59,7 @@ namespace Reader
 			mDrawerLayout.SetDrawerListener(mDrawerToggle);
 			ActionBar.SetDisplayHomeAsUpEnabled (true);
 			ActionBar.SetHomeButtonEnabled (true);	
+			ActionBar.SetDisplayShowTitleEnabled (true);
 
 
 			rssListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
@@ -67,12 +68,12 @@ namespace Reader
 				StartActivity(intent);
 			};
 
-			rssListView.ItemLongClick += (object sender, AdapterView.ItemLongClickEventArgs e) => {
+			/*rssListView.ItemLongClick += (object sender, AdapterView.ItemLongClickEventArgs e) => {
 				var uri = Android.Net.Uri.Parse (feeds[e.Position].Link);
 				var intent = new Intent (Intent.ActionView, uri); 
 				StartActivity (intent);   
 			};
-
+			*/
 		}
 
 		protected override void OnPostCreate (Bundle savedInstanceState)

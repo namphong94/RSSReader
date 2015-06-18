@@ -80,6 +80,7 @@
     <AndroidResource Include="Resources\layout\webviewLayout.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\makefg.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ic_navigation_drawer.png" />
+    <AndroidResource Include="Resources\values\theme.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

@@ -46,3 +46,4 @@ C:\Users\duutran\Desktop\RSSReader\RSSReader\Reader\Reader\obj\Debug\uploadflags
 C:\Users\duutran\Desktop\RSSReader\RSSReader\Reader\Reader\bin\Debug\Xamarin.Android.Support.v4.dll
 C:\Users\duutran\Desktop\RSSReader\RSSReader\Reader\Reader\obj\Debug\res\drawable-hdpi\makefg.png
 C:\Users\duutran\Desktop\RSSReader\RSSReader\Reader\Reader\obj\Debug\res\drawable-hdpi\ic_navigation_drawer.png
+C:\Users\duutran\Desktop\RSSReader\RSSReader\Reader\Reader\obj\Debug\res\values\theme.xml

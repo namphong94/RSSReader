@@ -39,6 +39,8 @@ public final class R {
         public static final int open_drawer=0x7f040003;
     }
     public static final class style {
+        public static final int CustomActionBarTheme=0x7f050001;
         public static final int Mono_Android_Theme_Splash=0x7f050000;
+        public static final int MyActionBar=0x7f050002;
     }
 }
