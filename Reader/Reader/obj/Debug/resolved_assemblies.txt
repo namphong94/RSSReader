@@ -1,3 +1,3 @@
-C:\Users\duutran\Desktop\RSSReader\RSSReader\Reader\Reader\bin\Debug\Reader.dll
-C:\Users\duutran\Desktop\RSSReader\RSSReader\Reader\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll
-C:\Users\duutran\Desktop\RSSReader\RSSReader\Reader\packages\Xamarin.Android.Support.v4.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll
+C:\Users\phongpham\Desktop\GitHub\RSSReader\Reader\Reader\bin\Debug\Reader.dll
+C:\Users\phongpham\Desktop\GitHub\RSSReader\Reader\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll
+C:\Users\phongpham\Desktop\GitHub\RSSReader\Reader\packages\Xamarin.Android.Support.v4.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll

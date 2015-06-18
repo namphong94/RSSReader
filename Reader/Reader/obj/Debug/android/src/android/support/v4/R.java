@@ -11,8 +11,10 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static int icon=0x7f020000;
-        public static int monoandroidsplash=0x7f020001;
+        public static int ic_navigation_drawer=0x7f020000;
+        public static int icon=0x7f020001;
+        public static int makefg=0x7f020002;
+        public static int monoandroidsplash=0x7f020003;
     }
     public static final class id {
         public static int RssView=0x7f060003;
@@ -32,9 +34,13 @@ public final class R {
     public static final class string {
         public static int app_name=0x7f040001;
         public static int channel=0x7f040002;
+        public static int close_drawer=0x7f040004;
         public static int hello=0x7f040000;
+        public static int open_drawer=0x7f040003;
     }
     public static final class style {
+        public static int CustomActionBarTheme=0x7f050001;
         public static int Mono_Android_Theme_Splash=0x7f050000;
+        public static int MyActionBar=0x7f050002;
     }
 }

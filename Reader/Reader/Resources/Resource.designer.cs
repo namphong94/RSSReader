@@ -69,11 +69,14 @@ namespace Reader
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f060005
+			public const int NewsImage = 2131099653;
+			
 			// aapt resource value: 0x7f060003
 			public const int RssView = 2131099651;
 			
-			// aapt resource value: 0x7f060005
-			public const int TitleText = 2131099653;
+			// aapt resource value: 0x7f060006
+			public const int TitleText = 2131099654;
 			
 			// aapt resource value: 0x7f060002
 			public const int content_frame = 2131099650;
@@ -87,8 +90,8 @@ namespace Reader
 			// aapt resource value: 0x7f060001
 			public const int myDrawer = 2131099649;
 			
-			// aapt resource value: 0x7f060006
-			public const int rssWebview = 2131099654;
+			// aapt resource value: 0x7f060007
+			public const int rssWebview = 2131099655;
 			
 			static Id()
 			{

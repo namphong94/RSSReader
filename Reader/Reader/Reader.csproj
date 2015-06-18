@@ -60,6 +60,7 @@
     <Compile Include="DescriptionActivity.cs" />
     <Compile Include="webViewActivity.cs" />
     <Compile Include="MyActionBarDrawerToggle.cs" />
+    <Compile Include="ViewHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

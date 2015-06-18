@@ -21,7 +21,6 @@ namespace Reader
 	[Activity (Label = "Reader", MainLauncher = true, Icon = "@drawable/icon",Theme ="@style/CustomActionBarTheme")]
 	public class MainActivity : Activity
 	{
-		private ListView rssListView;
 		private string channel = "http://vnexpress.net/rss/tin-moi-nhat.rss";
 		private RSS rssReader= new RSS();
 		List<RssFeed> feeds =new List<RssFeed>();
@@ -35,13 +34,13 @@ namespace Reader
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-			rssListView = FindViewById<ListView>(Resource.Id.RssView);
 			feeds = rssReader.getRSSData(channel);
-			RssAdapter adapter = new RssAdapter (this, feeds);
-			rssListView.Adapter = adapter;	
+
+			var rssAdapter = new RssAdapter (this, feeds);
+			var rssListView = FindViewById<ListView> (Resource.Id.RssView);
+			rssListView.Adapter = rssAdapter;
 
 
 			mDrawerLayout = FindViewById<DrawerLayout> (Resource.Id.myDrawer);
@@ -64,16 +63,10 @@ namespace Reader
 
 			rssListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
 				Intent intent = new Intent(this,typeof(webViewActivity));
-				intent.PutExtra("feed",JsonConvert.SerializeObject(feeds[e.Position]));
+				intent.PutExtra("feed",feeds[e.Position].Link);
 				StartActivity(intent);
 			};
 
-			/*rssListView.ItemLongClick += (object sender, AdapterView.ItemLongClickEventArgs e) => {
-				var uri = Android.Net.Uri.Parse (feeds[e.Position].Link);
-				var intent = new Intent (Intent.ActionView, uri); 
-				StartActivity (intent);   
-			};
-			*/
 		}
 
 		protected override void OnPostCreate (Bundle savedInstanceState)

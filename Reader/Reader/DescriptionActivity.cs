@@ -28,6 +28,7 @@ namespace Reader
 			feed = JsonConvert.DeserializeObject<RssFeed> (Intent.GetStringExtra ("feed"));
 			descriptionRSS.Text = feed.Description.ToString ();
 
+
 			descriptionRSS.Click +=	delegate {
 				Intent intent = new Intent (this, typeof(webViewActivity));
 				intent.PutExtra ("link", JsonConvert.SerializeObject (feed));

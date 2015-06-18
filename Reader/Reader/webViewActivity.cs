@@ -17,17 +17,19 @@ namespace Reader
 	public class webViewActivity : Activity
 	{
 		WebView rssWebview;
-		RssFeed rssFeed;
+		string link;
+		//RssFeed rssFeed;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 			// Create your application here
 			SetContentView (Resource.Layout.webviewLayout);
 
-			rssFeed = JsonConvert.DeserializeObject<RssFeed> (Intent.GetStringExtra("feed"));
+		//	rssFeed = JsonConvert.DeserializeObject<RssFeed> (Intent.GetStringExtra("feed"));
+			link = Intent.GetStringExtra("feed");
 			rssWebview = FindViewById<WebView> (Resource.Id.rssWebview);
 			rssWebview.Settings.JavaScriptEnabled = true;
-			rssWebview.LoadUrl (rssFeed.Link);
+			rssWebview.LoadUrl (link);
 
 		}
 	}

@@ -10,6 +10,7 @@ using System.IO;
 using System.Xml;
 using Reader;
 using System.Collections.Generic;
+using Android.Graphics;
 
 
 namespace Reader
@@ -17,10 +18,27 @@ namespace Reader
 	class RssAdapter: BaseAdapter<RssFeed>
 	{
 		private List<RssFeed> feeds;
-		private Context mContext;
-		public RssAdapter(Context Context, List<RssFeed> feed)
+		Activity _activity;
+
+		public Bitmap GetImageBitmapFromUrl(string url)
 		{
-			mContext = Context;
+			Bitmap imageBitmap = null;
+
+			using (var webClient = new WebClient())
+			{
+				var imageBytes = webClient.DownloadData(url);
+				if (imageBytes != null && imageBytes.Length > 0)
+				{
+					imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
+				}
+			}
+
+			return imageBitmap;
+		}
+
+		public RssAdapter(Activity activity, List<RssFeed> feed)
+		{
+			_activity = activity;
 			feeds = feed;
 		}
 		public override int Count
@@ -41,14 +59,27 @@ namespace Reader
 		}
 		public override View GetView (int position, View convertView, ViewGroup parent)
 		{
-			View row = convertView;
-			if (row == null) {
-				row = LayoutInflater.From (mContext).Inflate (Resource.Layout.Rss_layout,null,false);
-			}
-			TextView txtTitle = row.FindViewById<TextView> (Resource.Id.TitleText);
-			txtTitle.Text = feeds [position].Title;
+			ViewHolder holder;
 
-			return row;
+			if (convertView == null)
+			{
+				convertView = _activity.LayoutInflater.Inflate(Resource.Layout.Rss_layout, null);
+				holder = new ViewHolder();
+				holder.newsImageView = (ImageView) convertView.FindViewById(Resource.Id.NewsImage);
+				holder.titleTextView = (TextView) convertView.FindViewById(Resource.Id.TitleText);
+				convertView.Tag = holder;
+			}
+
+			else
+			{
+				holder = (ViewHolder) convertView.Tag;
+			}
+
+			RssFeed news = (RssFeed) GetItem(position);
+			holder.titleTextView.Text = news.Title;
+			holder.newsImageView.SetImageBitmap (GetImageBitmapFromUrl (news.Image));
+
+			return convertView;
 		}
 	}
 }
