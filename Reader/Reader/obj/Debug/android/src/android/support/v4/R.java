@@ -17,13 +17,14 @@ public final class R {
         public static int monoandroidsplash=0x7f020003;
     }
     public static final class id {
+        public static int NewsImage=0x7f060005;
         public static int RssView=0x7f060003;
-        public static int TitleText=0x7f060005;
+        public static int TitleText=0x7f060006;
         public static int content_frame=0x7f060002;
         public static int description=0x7f060000;
         public static int leftListView=0x7f060004;
         public static int myDrawer=0x7f060001;
-        public static int rssWebview=0x7f060006;
+        public static int rssWebview=0x7f060007;
     }
     public static final class layout {
         public static int descriptionlayout=0x7f030000;
