@@ -1,8 +1,0 @@
-Reader.MainActivity, Reader;md51dea1522efb0d0a9fc52c354b9215c55.MainActivity
-Reader.MainActivity, Reader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51dea1522efb0d0a9fc52c354b9215c55.MainActivity
-Reader.MainActivity;md51dea1522efb0d0a9fc52c354b9215c55.MainActivity
-reader.MainActivity;md51dea1522efb0d0a9fc52c354b9215c55.MainActivity
-Reader.RssAdapter, Reader;md51dea1522efb0d0a9fc52c354b9215c55.RssAdapter
-Reader.RssAdapter, Reader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51dea1522efb0d0a9fc52c354b9215c55.RssAdapter
-Reader.RssAdapter;md51dea1522efb0d0a9fc52c354b9215c55.RssAdapter
-reader.RssAdapter;md51dea1522efb0d0a9fc52c354b9215c55.RssAdapter
