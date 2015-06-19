@@ -1,0 +1,9 @@
+<android.support.v4.widget.DrawerLayout android:id="@+id/myDrawer" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"><!-- The main content view --><FrameLayout android:id="@+id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent"><ListView android:minWidth="25px" android:minHeight="25px" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/RssView" /></FrameLayout><!-- The menu list view simple --><!--<ListView
+        android:id="@+id/leftListView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:choiceMode="singleChoice"
+        android:divider="#D2D2D2"
+        android:dividerHeight="3dp"
+        android:background="#F2F2F2" />--><ExpandableListView android:id="@+id/leftListView" android:layout_width="300dp" android:minHeight="25px" android:layout_height="wrap_content" android:layout_gravity="left" android:choiceMode="singleChoice" android:divider="#D2D2D2" android:dividerHeight="3dp" android:background="#F2F2F2" /></android.support.v4.widget.DrawerLayout>
