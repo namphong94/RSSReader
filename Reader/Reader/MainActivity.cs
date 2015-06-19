@@ -15,6 +15,7 @@ using Newtonsoft.Json;
 using Android.Support.V4;
 using Android.Support.V4.Widget;
 using Android.Support.V4.App;
+using Android.Net;
 
 namespace Reader
 {
@@ -43,8 +44,8 @@ namespace Reader
 			
 		DrawerLayout mDrawerLayout;
 		List<string> mLeftitem = new List<string>();
-		ListView mLeftDrawer;
-		ArrayAdapter mLeftAdapter;
+		ExpandableListView mLeftDrawer;
+		Adapter mLeftAdapter;
 		ActionBarDrawerToggle mDrawerToggle;
 
 		protected override void OnCreate (Bundle bundle)
@@ -60,16 +61,19 @@ namespace Reader
 
 
 			mDrawerLayout = FindViewById<DrawerLayout> (Resource.Id.myDrawer);
-			mLeftDrawer = FindViewById<ListView> (Resource.Id.leftListView);
+			mLeftDrawer = FindViewById<ExpandableListView> (Resource.Id.leftListView);
 
-			mLeftitem.Add ("VnExpress");
-			mLeftitem.Add ("ZingVN");
-			mLeftitem.Add ("Genk");
+			//mLeftitem.Add ("VnExpress");
+			//mLeftitem.Add ("ZingVN");
+			//mLeftitem.Add ("Genk");
 
 			mDrawerToggle = new MyActionBarDrawerToggle (this, mDrawerLayout, Resource.Drawable.ic_navigation_drawer, Resource.String.open_drawer, Resource.String.close_drawer);
 
-			mLeftAdapter = new ArrayAdapter (this, Android.Resource.Layout.SimpleListItem1, mLeftitem);
+			/*mLeftAdapter = new ArrayAdapter (this, Android.Resource.Layout.SimpleListItem1, mLeftitem);
 			mLeftDrawer.Adapter = mLeftAdapter;
+			*/
+
+			mLeftDrawer.SetAdapter (new ExpandableDataAdapter (this, News.CategoryList()));
 
 			mDrawerLayout.SetDrawerListener(mDrawerToggle);
 			ActionBar.SetDisplayHomeAsUpEnabled (true);

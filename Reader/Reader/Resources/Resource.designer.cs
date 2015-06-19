@@ -69,29 +69,38 @@ namespace Reader
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060005
-			public const int NewsImage = 2131099653;
+			// aapt resource value: 0x7f060001
+			public const int Category = 2131099649;
 			
 			// aapt resource value: 0x7f060003
-			public const int RssView = 2131099651;
-			
-			// aapt resource value: 0x7f060006
-			public const int TitleText = 2131099654;
-			
-			// aapt resource value: 0x7f060002
-			public const int content_frame = 2131099650;
+			public const int DataHeader = 2131099651;
 			
 			// aapt resource value: 0x7f060000
-			public const int description = 2131099648;
+			public const int DataRow = 2131099648;
 			
-			// aapt resource value: 0x7f060004
-			public const int leftListView = 2131099652;
+			// aapt resource value: 0x7f060008
+			public const int NewsImage = 2131099656;
 			
-			// aapt resource value: 0x7f060001
-			public const int myDrawer = 2131099649;
+			// aapt resource value: 0x7f060006
+			public const int RssView = 2131099654;
+			
+			// aapt resource value: 0x7f060009
+			public const int TitleText = 2131099657;
+			
+			// aapt resource value: 0x7f060005
+			public const int content_frame = 2131099653;
+			
+			// aapt resource value: 0x7f060002
+			public const int description = 2131099650;
 			
 			// aapt resource value: 0x7f060007
-			public const int rssWebview = 2131099655;
+			public const int leftListView = 2131099655;
+			
+			// aapt resource value: 0x7f060004
+			public const int myDrawer = 2131099652;
+			
+			// aapt resource value: 0x7f06000a
+			public const int rssWebview = 2131099658;
 			
 			static Id()
 			{
@@ -107,16 +116,22 @@ namespace Reader
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int descriptionLayout = 2130903040;
+			public const int DataListItem = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int descriptionLayout = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Rss_layout = 2130903042;
+			public const int ListGroup = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int webviewLayout = 2130903043;
+			public const int Main = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Rss_layout = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int webviewLayout = 2130903045;
 			
 			static Layout()
 			{

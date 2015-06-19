@@ -16,10 +16,20 @@
             android:id="@+id/RssView" />
     </FrameLayout>
 <!-- The menu list view simple -->
-    <ListView
+<!--<ListView
         android:id="@+id/leftListView"
         android:layout_width="300dp"
         android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:choiceMode="singleChoice"
+        android:divider="#D2D2D2"
+        android:dividerHeight="3dp"
+        android:background="#F2F2F2" />-->
+    <ExpandableListView
+        android:id="@+id/leftListView"
+        android:layout_width="300dp"
+        android:minHeight="25px"
+        android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:choiceMode="singleChoice"
         android:divider="#D2D2D2"
