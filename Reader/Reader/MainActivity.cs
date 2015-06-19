@@ -25,6 +25,22 @@ namespace Reader
 		private RSS rssReader= new RSS();
 		List<RssFeed> feeds =new List<RssFeed>();
 
+		protected override void OnStart ()
+		{
+			base.OnStart ();
+			var connectivityManager = (ConnectivityManager)GetSystemService(ConnectivityService);
+			var activeConnection = connectivityManager.ActiveNetworkInfo;
+			if ((activeConnection == null)  || !activeConnection.IsConnected)
+			{
+				AlertDialog.Builder builder = new AlertDialog.Builder(this);
+				builder.SetTitle("Connection Error");
+				builder.SetMessage("Cannot connect to the internet!");
+				builder.SetCancelable(false);
+				builder.SetPositiveButton("Exit", delegate { Finish(); });
+				builder.Show();
+			}
+		}
+			
 		DrawerLayout mDrawerLayout;
 		List<string> mLeftitem = new List<string>();
 		ListView mLeftDrawer;

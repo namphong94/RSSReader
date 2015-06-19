@@ -36,7 +36,6 @@ namespace InternetCheck
 				builder.SetCancelable(false);
 				builder.SetPositiveButton("Exit", delegate { Finish(); });
 				builder.Show();
-				
 			}
 
 		}

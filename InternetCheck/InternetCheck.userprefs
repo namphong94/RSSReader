@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="InternetCheck\InternetCheck.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.Workbench ActiveDocument="InternetCheck\MainActivity.cs">
     <Files>
-      <File FileName="InternetCheck\MainActivity.cs" Line="40" Column="5" />
-      <File FileName="InternetCheck\Properties\AndroidManifest.xml" Line="6" Column="12" />
+      <File FileName="InternetCheck\MainActivity.cs" Line="39" Column="5" />
+      <File FileName="InternetCheck\Properties\AndroidManifest.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
