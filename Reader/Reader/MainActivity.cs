@@ -82,6 +82,16 @@ namespace Reader
 			//ActionBar.SetHomeButtonEnabled (true);	
 			//ActionBar.SetDisplayShowTitleEnabled (true);
 
+			var menuButton = FindViewById<ImageButton> (Resource.Id.menuButton); // menu button
+
+			menuButton.Click += (sender, e) => {      // open menu click
+				if (mDrawerLayout.IsShown == true) {
+					mDrawerLayout.OpenDrawer(mLeftDrawer);
+				} else {
+					mDrawerLayout.CloseDrawer(mLeftDrawer);
+				}
+
+			};
 
 			rssListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
 				Intent intent = new Intent(this,typeof(webViewActivity));
@@ -145,22 +155,22 @@ namespace Reader
 					return "http://vietnamnet.vn/rss/kinh-te.rss";
 
 			if(childPosition == 2 && groupPosition == 1)
-				return "http://vietnamnet.vn/rss/van-hoa.rss";
+				return "http://vietnamnet.vn/rss/ban-doc-phap-luat.rss";
 
 			if(childPosition == 3 && groupPosition == 1)
-				return  "http://vietnamnet.vn/rss/tin-noi-bat.rss";
+				return  "http://vietnamnet.vn/rss/cong-nghe-thong-tin-vien-thong.rss";
 
 			if(childPosition == 0 && groupPosition == 2)
-				return "http://www.24h.com.vn/upload/rss/anninhhinhsu.rss";
+				return "http://www.thanhnien.com.vn/rss/chinh-tri-xa-hoi.rss";
 
 			if (childPosition == 1 && groupPosition == 2)
-					return "http://www.24h.com.vn/upload/rss/taichinhbatdongsan.rss";
+				return "http://www.thanhnien.com.vn/rss/kinh-te.rss";
 
 			if(childPosition == 2 && groupPosition == 2)
-				return "http://www.24h.com.vn/upload/rss/dulich.rss";
+				return "http://www.thanhnien.com.vn/rss/du-lich.rss";
 
 			if(childPosition == 3 && groupPosition == 2)
-				return "http://www.24h.com.vn/upload/rss/bongda.rss";
+				return "http://www.thanhnien.com.vn/rss/the-thao.rss";
 			return null;
 		}
 	}

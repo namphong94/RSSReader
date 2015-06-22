@@ -89,7 +89,7 @@
     <AndroidResource Include="Resources\layout\DataListItem.axml" />
     <AndroidResource Include="Resources\layout\ListGroup.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\BackButton.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\Menu.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

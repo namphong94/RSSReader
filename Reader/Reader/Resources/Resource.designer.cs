@@ -57,7 +57,7 @@ namespace Reader
 			public const int makefg = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Menu = 2130837508;
+			public const int menu = 2130837508;
 			
 			// aapt resource value: 0x7f020005
 			public const int monoandroidsplash = 2130837509;
@@ -84,14 +84,14 @@ namespace Reader
 			// aapt resource value: 0x7f060000
 			public const int DataRow = 2131099648;
 			
-			// aapt resource value: 0x7f06000a
-			public const int NewsImage = 2131099658;
-			
-			// aapt resource value: 0x7f060008
-			public const int RssView = 2131099656;
-			
 			// aapt resource value: 0x7f06000b
-			public const int TitleText = 2131099659;
+			public const int NewsImage = 2131099659;
+			
+			// aapt resource value: 0x7f060009
+			public const int RssView = 2131099657;
+			
+			// aapt resource value: 0x7f06000c
+			public const int TitleText = 2131099660;
 			
 			// aapt resource value: 0x7f060005
 			public const int content_frame = 2131099653;
@@ -99,20 +99,23 @@ namespace Reader
 			// aapt resource value: 0x7f060002
 			public const int description = 2131099650;
 			
-			// aapt resource value: 0x7f060009
-			public const int leftListView = 2131099657;
+			// aapt resource value: 0x7f06000a
+			public const int leftListView = 2131099658;
 			
 			// aapt resource value: 0x7f060007
-			public const int menuBtn = 2131099655;
+			public const int menuButton = 2131099655;
 			
 			// aapt resource value: 0x7f060004
 			public const int myDrawer = 2131099652;
 			
-			// aapt resource value: 0x7f06000c
-			public const int rssWebview = 2131099660;
+			// aapt resource value: 0x7f06000d
+			public const int rssWebview = 2131099661;
 			
 			// aapt resource value: 0x7f060006
 			public const int titleBar = 2131099654;
+			
+			// aapt resource value: 0x7f060008
+			public const int titleView = 2131099656;
 			
 			static Id()
 			{
@@ -157,6 +160,9 @@ namespace Reader
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f040005
+			public const int RSS = 2130968581;
 			
 			// aapt resource value: 0x7f040001
 			public const int app_name = 2130968577;

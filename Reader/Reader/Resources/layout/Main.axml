@@ -13,12 +13,18 @@
             android:layout_height="50dp"
             android:background="@android:color/holo_red_light">
             <ImageButton
-                android:id="@+id/menuBtn"
+                android:id="@+id/menuButton"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/menu"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true" />
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/RSS" />
         </RelativeLayout>
         <ListView
             android:minWidth="25px"

@@ -23,7 +23,7 @@ namespace Reader
 		public Bitmap GetImageBitmapFromUrl(string url)
 		{
 			Bitmap imageBitmap = null;
-
+		
 			using (var webClient = new WebClient())
 			{
 				var imageBytes = webClient.DownloadData(url);
@@ -34,6 +34,8 @@ namespace Reader
 			}
 
 			return imageBitmap;		
+
+			//return null;
 			}
 
 		public RssAdapter(Activity activity, List<RssFeed> feed)

@@ -18,6 +18,7 @@ namespace Reader
 	{
 		WebView rssWebview;
 		string link;
+		string title;
 		//RssFeed rssFeed;
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -27,6 +28,7 @@ namespace Reader
 			//rssWebview.Title = Intent.GetStringExtra("title");
 		//	rssFeed = JsonConvert.DeserializeObject<RssFeed> (Intent.GetStringExtra("feed"));
 			link = Intent.GetStringExtra("feed");
+			title = Intent.GetStringExtra ("title");
 			rssWebview = FindViewById<WebView> (Resource.Id.rssWebview);
 			rssWebview.Settings.JavaScriptEnabled = true;
 			rssWebview.LoadUrl (link);

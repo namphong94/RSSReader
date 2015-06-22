@@ -11,7 +11,7 @@ namespace Reader
 			NewsSourcesList = new List<string>();
 			NewsSourcesList.Add ("Vnexpress");
 			NewsSourcesList.Add ("VietnamNet");
-			NewsSourcesList.Add ("GenK");
+			NewsSourcesList.Add ("ThanhNien");
 		}
 
 	}
