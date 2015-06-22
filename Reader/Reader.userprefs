@@ -1,17 +1,37 @@
 ﻿<Properties StartupItem="Reader\Reader.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Reader\DescriptionActivity.cs">
     <Files>
-      <File FileName="Reader\DescriptionActivity.cs" Line="35" Column="6" />
+      <File FileName="Reader\DescriptionActivity.cs" Line="41" Column="1" />
       <File FileName="Reader\webViewActivity.cs" Line="1" Column="1" />
-      <File FileName="Reader\RssAdapter.cs" Line="22" Column="3" />
-      <File FileName="Reader\MainActivity.cs" Line="58" Column="67" />
-      <File FileName="Reader\Properties\AndroidManifest.xml" Line="6" Column="12" />
+      <File FileName="Reader\RssAdapter.cs" Line="29" Column="1" />
+      <File FileName="Reader\MainActivity.cs" Line="25" Column="66" />
+      <File FileName="Reader\Properties\AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="Reader\News.cs" Line="1" Column="1" />
+      <File FileName="Reader\NewsAdapter.cs" Line="1" Column="1" />
+      <File FileName="Reader\RSS.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\phongpham\Desktop\RSSReader\Reader\Reader\ExpandableDataAdapter.cs" Line="96" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Reader" expanded="True">
+            <Node name="Reader" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="drawable-hdpi" expanded="True" />
+                <Node name="layout" expanded="True" />
+              </Node>
+              <Node name="DescriptionActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Reader AndroidDesignerPreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.Reader AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="Theme.DeviceDefault.Dialog.Presentation" />
 </Properties>
