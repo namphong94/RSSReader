@@ -24,7 +24,7 @@ namespace Reader
 			base.OnCreate (bundle);
 			// Create your application here
 			SetContentView (Resource.Layout.webviewLayout);
-
+			//rssWebview.Title = Intent.GetStringExtra("title");
 		//	rssFeed = JsonConvert.DeserializeObject<RssFeed> (Intent.GetStringExtra("feed"));
 			link = Intent.GetStringExtra("feed");
 			rssWebview = FindViewById<WebView> (Resource.Id.rssWebview);

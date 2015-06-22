@@ -50,7 +50,7 @@ namespace Reader
 				try {
 					image = result.Groups [1].ToString ();
 				}
-				catch(Exception e)
+				catch(Exception)
 				{
 					Console.WriteLine (description);
 					XmlNodeList rssLogo = rssDoc.SelectNodes ("rss/channel/image");

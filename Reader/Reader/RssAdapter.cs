@@ -33,13 +33,19 @@ namespace Reader
 				}
 			}
 
-			return imageBitmap;
-		}
+			return imageBitmap;		
+			}
 
 		public RssAdapter(Activity activity, List<RssFeed> feed)
 		{
 			_activity = activity;
 			feeds = feed;
+		}
+
+		public void setData(List<RssFeed> theFeed)
+		{
+			feeds = theFeed;
+			notifyDataSetChanged ();
 		}
 		public override int Count
 		{
@@ -81,6 +87,11 @@ namespace Reader
 
 			return convertView;
 		}
+		public void notifyDataSetChanged() // Create this function in your adapter class
+				{
+			base.NotifyDataSetChanged ();
+		}
 	}
+	
 }
 

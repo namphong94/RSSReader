@@ -93,7 +93,7 @@ namespace Reader {
 
 		public override bool IsChildSelectable (int groupPosition, int childPosition)
 		{
-			throw new NotImplementedException ();
+			return true;
 		}
 
 		public override bool HasStableIds {

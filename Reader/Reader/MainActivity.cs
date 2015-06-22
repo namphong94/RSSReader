@@ -16,6 +16,7 @@ using Android.Support.V4;
 using Android.Support.V4.Widget;
 using Android.Support.V4.App;
 using Android.Net;
+using System.Threading.Tasks;
 
 namespace Reader
 {
@@ -25,7 +26,13 @@ namespace Reader
 		private string channel = "http://vnexpress.net/rss/khoa-hoc.rss";
 		private RSS rssReader= new RSS();
 		List<RssFeed> feeds =new List<RssFeed>();
-
+		DrawerLayout mDrawerLayout;
+		List<string> mLeftitem = new List<string>();
+		ExpandableListView mLeftDrawer;
+		//Adapter mLeftAdapter;
+		ListView rssListView;
+		RssAdapter rssAdapter;
+		//ActionBarDrawerToggle mDrawerToggle;
 		protected override void OnStart ()
 		{
 			base.OnStart ();
@@ -41,12 +48,6 @@ namespace Reader
 				builder.Show();
 			}
 		}
-			
-		DrawerLayout mDrawerLayout;
-		List<string> mLeftitem = new List<string>();
-		ExpandableListView mLeftDrawer;
-		Adapter mLeftAdapter;
-		//ActionBarDrawerToggle mDrawerToggle;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -56,8 +57,8 @@ namespace Reader
 
 			feeds = rssReader.getRSSData(channel);
 
-			var rssAdapter = new RssAdapter (this, feeds);
-			var rssListView = FindViewById<ListView> (Resource.Id.RssView);
+			rssAdapter = new RssAdapter (this, feeds);
+			rssListView = FindViewById<ListView> (Resource.Id.RssView);
 			rssListView.Adapter = rssAdapter;
 
 
@@ -85,7 +86,14 @@ namespace Reader
 			rssListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
 				Intent intent = new Intent(this,typeof(webViewActivity));
 				intent.PutExtra("feed",feeds[e.Position].Link);
+				intent.PutExtra("title",feeds[e.Position].Title);
 				StartActivity(intent);
+			};
+
+			mLeftDrawer.ChildClick += (object sender, ExpandableListView.ChildClickEventArgs e) => {
+				this.channel = getChannel(e.GroupPosition,e.ChildPosition);
+				Console.WriteLine("group: " + e.GroupPosition + "child:" + e.ChildPosition);
+				Refresh();
 			};
 
 		}
@@ -96,14 +104,64 @@ namespace Reader
 			//mDrawerToggle.SyncState ();
 		}
 
+		async public void Refresh()
+		{
+			feeds.Clear ();
+			feeds = rssReader.getRSSData(this.channel);
+			rssAdapter.setData (feeds);
+			await Task.Delay (100);
+			//rssListView.Invalidate ();
+		}
+
 		public override bool OnOptionsItemSelected (IMenuItem item)
 		{
 			//if (mDrawerToggle.OnOptionsItemSelected (item)) 
 			//{
-				//return true;
+			//	return true;
 			//}
 
 			return base.OnOptionsItemSelected (item);
+		}
+
+
+		public string getChannel(int groupPosition,int childPosition)
+		{
+			if(childPosition == 0  && groupPosition == 0)
+				return "http://vnexpress.net/rss/thoi-su.rss";
+
+			if (childPosition == 1 && groupPosition == 0)
+					return "http://vnexpress.net/rss/kinh-doanh.rss";
+
+			if(childPosition == 2 && groupPosition == 0)
+					return "http://vnexpress.net/rss/du-lich.rss";
+
+			if(childPosition == 3 && groupPosition == 0)
+					return "http://vnexpress.net/rss/the-thao.rss";
+
+			if(childPosition == 0 && groupPosition == 1)
+					return "http://vietnamnet.vn/rss/chinh-tri.rss";
+
+			if (childPosition == 1 && groupPosition == 1)
+					return "http://vietnamnet.vn/rss/kinh-te.rss";
+
+			if(childPosition == 2 && groupPosition == 1)
+				return "http://vietnamnet.vn/rss/van-hoa.rss";
+
+			if(childPosition == 3 && groupPosition == 1)
+				return  "http://vietnamnet.vn/rss/tin-noi-bat.rss";
+
+			if(childPosition == 0 && groupPosition == 2)
+				return "http://www.24h.com.vn/upload/rss/anninhhinhsu.rss";
+
+			if (childPosition == 1 && groupPosition == 2)
+					return "http://www.24h.com.vn/upload/rss/taichinhbatdongsan.rss";
+
+			if(childPosition == 2 && groupPosition == 2)
+				return "http://www.24h.com.vn/upload/rss/dulich.rss";
+
+			if(childPosition == 3 && groupPosition == 2)
+				return "http://www.24h.com.vn/upload/rss/bongda.rss";
+			return null;
 		}
 	}
 }
