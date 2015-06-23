@@ -19,14 +19,20 @@ namespace Reader
 		WebView rssWebview;
 		string link;
 		string title;
+		TextView webTitle;
 		//RssFeed rssFeed;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 			// Create your application here
+			RequestWindowFeature(WindowFeatures.NoTitle);
 			SetContentView (Resource.Layout.webviewLayout);
 			link = Intent.GetStringExtra("feed");
 			title = Intent.GetStringExtra ("title");
+
+			webTitle = FindViewById<TextView> (Resource.Id.titleWebView);
+			webTitle.Text = title;
+
 			rssWebview = FindViewById<WebView> (Resource.Id.rssWebview);
 			rssWebview.Settings.JavaScriptEnabled = true;
 			rssWebview.LoadUrl (link);

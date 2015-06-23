@@ -123,14 +123,17 @@ namespace Reader
 			// aapt resource value: 0x7f060004
 			public const int myDrawer = 2131099652;
 			
-			// aapt resource value: 0x7f060011
-			public const int rssWebview = 2131099665;
+			// aapt resource value: 0x7f060012
+			public const int rssWebview = 2131099666;
 			
 			// aapt resource value: 0x7f060006
 			public const int titleBar = 2131099654;
 			
 			// aapt resource value: 0x7f060008
 			public const int titleView = 2131099656;
+			
+			// aapt resource value: 0x7f060011
+			public const int titleWebView = 2131099665;
 			
 			static Id()
 			{

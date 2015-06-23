@@ -5,6 +5,20 @@
     android:layout_height="fill_parent"
     android:minWidth="25px"
     android:minHeight="25px">
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_red_light">
+        <TextView
+            android:id="@+id/titleWebView"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/RSS" />
+    </RelativeLayout>
     <WebView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
