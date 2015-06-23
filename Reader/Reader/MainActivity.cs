@@ -23,7 +23,8 @@ namespace Reader
 	[Activity (Label = "Reader", MainLauncher = true, Icon = "@drawable/icon",Theme ="@style/CustomActionBarTheme")]
 	public class MainActivity : Activity
 	{
-		private string channel = "http://vnexpress.net/rss/khoa-hoc.rss";
+		private static int groupPosition;
+		private string channel = "http://vnexpress.net/rss/thoi-su.rss";
 		private RSS rssReader= new RSS();
 		List<RssFeed> feeds =new List<RssFeed>();
 		DrawerLayout mDrawerLayout;
@@ -101,6 +102,7 @@ namespace Reader
 			};
 
 			mLeftDrawer.ChildClick += (object sender, ExpandableListView.ChildClickEventArgs e) => {
+				groupPosition = e.GroupPosition;
 				this.channel = getChannel(e.GroupPosition,e.ChildPosition);
 				Console.WriteLine("group: " + e.GroupPosition + "child:" + e.ChildPosition);
 				Refresh();
