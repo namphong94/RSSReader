@@ -45,22 +45,25 @@ namespace Reader
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int BackButton = 2130837504;
+			public const int AboutButton = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int ic_navigation_drawer = 2130837505;
+			public const int BackButton = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Icon = 2130837506;
+			public const int ic_navigation_drawer = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int makefg = 2130837507;
+			public const int Icon = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int menu = 2130837508;
+			public const int makefg = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int monoandroidsplash = 2130837509;
+			public const int menu = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int monoandroidsplash = 2130837510;
 			
 			static Drawable()
 			{
@@ -75,6 +78,12 @@ namespace Reader
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f06000c
+			public const int AboutButton = 2131099660;
+			
+			// aapt resource value: 0x7f06000d
+			public const int AboutIcon = 2131099661;
+			
 			// aapt resource value: 0x7f060001
 			public const int Category = 2131099649;
 			
@@ -84,14 +93,20 @@ namespace Reader
 			// aapt resource value: 0x7f060000
 			public const int DataRow = 2131099648;
 			
-			// aapt resource value: 0x7f06000b
-			public const int NewsImage = 2131099659;
+			// aapt resource value: 0x7f06000a
+			public const int Menu = 2131099658;
+			
+			// aapt resource value: 0x7f06000f
+			public const int NewsImage = 2131099663;
 			
 			// aapt resource value: 0x7f060009
 			public const int RssView = 2131099657;
 			
-			// aapt resource value: 0x7f06000c
-			public const int TitleText = 2131099660;
+			// aapt resource value: 0x7f060010
+			public const int TitleText = 2131099664;
+			
+			// aapt resource value: 0x7f06000e
+			public const int aboutView = 2131099662;
 			
 			// aapt resource value: 0x7f060005
 			public const int content_frame = 2131099653;
@@ -99,8 +114,8 @@ namespace Reader
 			// aapt resource value: 0x7f060002
 			public const int description = 2131099650;
 			
-			// aapt resource value: 0x7f06000a
-			public const int leftListView = 2131099658;
+			// aapt resource value: 0x7f06000b
+			public const int leftListView = 2131099659;
 			
 			// aapt resource value: 0x7f060007
 			public const int menuButton = 2131099655;
@@ -108,8 +123,8 @@ namespace Reader
 			// aapt resource value: 0x7f060004
 			public const int myDrawer = 2131099652;
 			
-			// aapt resource value: 0x7f06000d
-			public const int rssWebview = 2131099661;
+			// aapt resource value: 0x7f060011
+			public const int rssWebview = 2131099665;
 			
 			// aapt resource value: 0x7f060006
 			public const int titleBar = 2131099654;
@@ -160,6 +175,9 @@ namespace Reader
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f040006
+			public const int About = 2130968582;
 			
 			// aapt resource value: 0x7f040005
 			public const int RSS = 2130968581;

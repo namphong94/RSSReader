@@ -29,11 +29,10 @@ namespace Reader
 		List<RssFeed> feeds =new List<RssFeed>();
 		DrawerLayout mDrawerLayout;
 		List<string> mLeftitem = new List<string>();
-		ExpandableListView mLeftDrawer;
-		//Adapter mLeftAdapter;
+		RelativeLayout mLeftMenu;
+		ExpandableListView mLeftMenuListView;
 		ListView rssListView;
 		RssAdapter rssAdapter;
-		//ActionBarDrawerToggle mDrawerToggle;
 		protected override void OnStart ()
 		{
 			base.OnStart ();
@@ -64,34 +63,29 @@ namespace Reader
 
 
 			mDrawerLayout = FindViewById<DrawerLayout> (Resource.Id.myDrawer);
-			mLeftDrawer = FindViewById<ExpandableListView> (Resource.Id.leftListView);
-
-			//mLeftitem.Add ("VnExpress");
-			//mLeftitem.Add ("ZingVN");
-			//mLeftitem.Add ("Genk");
-
-			//mDrawerToggle = new MyActionBarDrawerToggle (this, mDrawerLayout, Resource.Drawable.ic_navigation_drawer, Resource.String.open_drawer, Resource.String.close_drawer);
-
-			/*mLeftAdapter = new ArrayAdapter (this, Android.Resource.Layout.SimpleListItem1, mLeftitem);
-			mLeftDrawer.Adapter = mLeftAdapter;
-			*/
-
-			mLeftDrawer.SetAdapter (new ExpandableDataAdapter (this, News.CategoryList()));
-
-			//mDrawerLayout.SetDrawerListener(mDrawerToggle);
-			//ActionBar.SetDisplayHomeAsUpEnabled (true);
-			//ActionBar.SetHomeButtonEnabled (true);	
-			//ActionBar.SetDisplayShowTitleEnabled (true);
+			mLeftMenu = FindViewById<RelativeLayout> (Resource.Id.Menu);
+			mLeftMenuListView = FindViewById<ExpandableListView> (Resource.Id.leftListView);
+		
+			mLeftMenuListView.SetAdapter (new ExpandableDataAdapter (this, News.CategoryList()));
 
 			var menuButton = FindViewById<ImageButton> (Resource.Id.menuButton); // menu button
 
-			menuButton.Click += (sender, e) => {      // open menu click
+			menuButton.Click += (sender, e) => {     				 // open menu click
 				if (mDrawerLayout.IsShown == true) {
-					mDrawerLayout.OpenDrawer(mLeftDrawer);
+					mDrawerLayout.OpenDrawer(mLeftMenu);
 				} else {
-					mDrawerLayout.CloseDrawer(mLeftDrawer);
+					mDrawerLayout.CloseDrawer(mLeftMenu);
 				}
+			};
 
+			var aboutButton = FindViewById<RelativeLayout> (Resource.Id.AboutButton); // about button
+
+				aboutButton.Click += (sender, e) => {       
+					AlertDialog.Builder builder = new AlertDialog.Builder(this);
+					builder.SetTitle ("ABOUT");
+					builder.SetMessage ("RSS Reader v1.0!");
+					builder.SetCancelable (true);
+					builder.Show ();
 			};
 
 			rssListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
@@ -101,7 +95,7 @@ namespace Reader
 				StartActivity(intent);
 			};
 
-			mLeftDrawer.ChildClick += (object sender, ExpandableListView.ChildClickEventArgs e) => {
+			mLeftMenuListView.ChildClick += (object sender, ExpandableListView.ChildClickEventArgs e) => {
 				groupPosition = e.GroupPosition;
 				this.channel = getChannel(e.GroupPosition,e.ChildPosition);
 				Console.WriteLine("group: " + e.GroupPosition + "child:" + e.ChildPosition);
@@ -113,7 +107,7 @@ namespace Reader
 		protected override void OnPostCreate (Bundle savedInstanceState)
 		{
 			base.OnPostCreate (savedInstanceState);
-			//mDrawerToggle.SyncState ();
+	
 		}
 
 		async public void Refresh()
@@ -127,11 +121,6 @@ namespace Reader
 
 		public override bool OnOptionsItemSelected (IMenuItem item)
 		{
-			//if (mDrawerToggle.OnOptionsItemSelected (item)) 
-			//{
-			//	return true;
-			//}
-
 			return base.OnOptionsItemSelected (item);
 		}
 

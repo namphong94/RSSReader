@@ -6,4 +6,5 @@
 	<string name="open_drawer">Open Drawer</string>
 	<string name="close_drawer">Close Drawer</string>
 	<string name="RSS">RSS Reader</string>
+	<string name="About">About</string>
 </resources>

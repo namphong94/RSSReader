@@ -39,7 +39,8 @@ namespace Reader
 					title = "";
 				
 				if (channel == "http://vnexpress.net/rss/thoi-su.rss" || channel == "http://vnexpress.net/rss/kinh-doanh.rss" 
-					|| channel == "http://vnexpress.net/rss/du-lich.rss" || channel == "http://vnexpress.net/rss/the-thao.rss") {
+					|| channel == "http://vnexpress.net/rss/du-lich.rss" || channel == "http://vnexpress.net/rss/the-thao.rss")
+				{
 					rssNode = rssItems.Item (i).SelectSingleNode ("description");
 					description = rssNode.InnerText;
 					int start = description.IndexOf ("src=") + 5;
@@ -50,7 +51,6 @@ namespace Reader
 					try {
 						image = result.Groups [1].ToString ();
 					} catch (Exception) {
-						Console.WriteLine (description);
 						XmlNodeList rssLogo = rssDoc.SelectNodes ("rss/channel/image");
 						XmlNode rssNodeLogo = rssLogo.Item (i).SelectSingleNode ("url");
 						image = rssNodeLogo.InnerText;
@@ -58,12 +58,14 @@ namespace Reader
 				}
 
 				else if (channel == "http://vietnamnet.vn/rss/chinh-tri.rss" || channel == "http://vietnamnet.vn/rss/kinh-te.rss"
-				    || channel == "http://vietnamnet.vn/rss/ban-doc-phap-luat.rss" || channel == "http://vietnamnet.vn/rss/cong-nghe-thong-tin-vien-thong.rss") {
+				    || channel == "http://vietnamnet.vn/rss/ban-doc-phap-luat.rss" || channel == "http://vietnamnet.vn/rss/cong-nghe-thong-tin-vien-thong.rss") 
+				{
 					rssNode = rssItems.Item (i).SelectSingleNode ("image");
 					image = rssNode.InnerText;
 				} 
 
-				else {
+				else 
+				{
 					rssNode = rssItems.Item (i).SelectSingleNode ("description");
 					description = rssNode.InnerText;
 					int start = description.IndexOf ("src=&quot") + 10;
@@ -74,7 +76,6 @@ namespace Reader
 					try {
 						image = result.Groups [1].ToString ();
 					} catch (Exception) {
-						Console.WriteLine (description);
 						XmlNodeList rssLogo = rssDoc.SelectNodes ("rss/channel/image");
 						XmlNode rssNodeLogo = rssLogo.Item (i).SelectSingleNode ("url");
 						image = rssNodeLogo.InnerText;

@@ -90,6 +90,7 @@
     <AndroidResource Include="Resources\layout\ListGroup.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\BackButton.png" />
     <AndroidResource Include="Resources\drawable-hdpi\menu.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\AboutButton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

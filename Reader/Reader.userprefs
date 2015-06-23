@@ -1,33 +1,17 @@
 ﻿<Properties StartupItem="Reader\Reader.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Reader\DescriptionActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Reader\DescriptionActivity.cs" Line="41" Column="1" />
-      <File FileName="Reader\webViewActivity.cs" Line="1" Column="1" />
+      <File FileName="Reader\webViewActivity.cs" Line="27" Column="51" />
       <File FileName="Reader\RssAdapter.cs" Line="29" Column="1" />
-      <File FileName="Reader\MainActivity.cs" Line="25" Column="66" />
-      <File FileName="Reader\Properties\AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="Reader\MainActivity.cs" Line="81" Column="75" />
       <File FileName="Reader\News.cs" Line="1" Column="1" />
       <File FileName="Reader\NewsAdapter.cs" Line="1" Column="1" />
-      <File FileName="Reader\RSS.cs" Line="1" Column="1" />
+      <File FileName="Reader\RSS.cs" Line="96" Column="4" />
       <File FileName="c:\Users\phongpham\Desktop\RSSReader\Reader\Reader\ExpandableDataAdapter.cs" Line="96" Column="1" />
+      <File FileName="Reader\Properties\AndroidManifest.xml" Line="6" Column="12" />
+      <File FileName="Reader\Resources\values\Strings.xml" Line="9" Column="28" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Reader" expanded="True">
-            <Node name="Reader" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="drawable-hdpi" expanded="True" />
-                <Node name="layout" expanded="True" />
-              </Node>
-              <Node name="DescriptionActivity.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
