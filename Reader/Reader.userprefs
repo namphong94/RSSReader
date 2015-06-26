@@ -1,21 +1,22 @@
-﻿<Properties StartupItem="Reader\Reader.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupItem="Reader/Reader.Android.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus S (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Reader/MainActivity.cs">
     <Files>
-      <File FileName="Reader\webViewActivity.cs" Line="27" Column="51" />
-      <File FileName="Reader\RssAdapter.cs" Line="29" Column="1" />
-      <File FileName="Reader\MainActivity.cs" Line="81" Column="75" />
-      <File FileName="Reader\News.cs" Line="1" Column="1" />
-      <File FileName="Reader\NewsAdapter.cs" Line="1" Column="1" />
-      <File FileName="Reader\RSS.cs" Line="96" Column="4" />
-      <File FileName="c:\Users\phongpham\Desktop\RSSReader\Reader\Reader\ExpandableDataAdapter.cs" Line="96" Column="1" />
-      <File FileName="Reader\Properties\AndroidManifest.xml" Line="6" Column="12" />
-      <File FileName="Reader\Resources\values\Strings.xml" Line="9" Column="28" />
+      <File FileName="Reader.Shared/News.cs" Line="1" Column="1" />
+      <File FileName="Reader.Shared/NewsSources.cs" Line="1" Column="1" />
+      <File FileName="Reader.Shared/RSS.cs" Line="1" Column="1" />
+      <File FileName="Reader.Shared/RssFeed.cs" Line="1" Column="1" />
+      <File FileName="Reader/Resources/values/theme.xml" Line="1" Column="1" />
+      <File FileName="Reader/Properties/AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="Reader/MainActivity.cs" Line="17" Column="19" />
+      <File FileName="Reader/MyActionBarDrawerToggle.cs" Line="56" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/xamarin/RSSReader/Reader/Reader/obj/Debug/android/src/md51dea1522efb0d0a9fc52c354b9215c55/MyActionBarDrawerToggle.java" line="5" column="32" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Reader AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="Theme.DeviceDefault.Dialog.Presentation" />
+  <MonoDevelop.Ide.ItemProperties.Reader.Android AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>

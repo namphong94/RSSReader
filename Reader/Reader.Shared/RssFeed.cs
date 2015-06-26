@@ -6,7 +6,7 @@ using Reader;
 
 namespace Reader
 {
-	public class RssFeed
+	public class RssFeed : Java.Lang.Object
 	{	public string Title {
 			get;
 			set;

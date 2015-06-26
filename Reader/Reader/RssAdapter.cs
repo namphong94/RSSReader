@@ -12,7 +12,6 @@ using Reader;
 using System.Collections.Generic;
 using Android.Graphics;
 
-
 namespace Reader
 {
 	class RssAdapter: BaseAdapter<RssFeed>

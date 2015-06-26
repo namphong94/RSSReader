@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace Reader
 {
-	public class RSS
+	public class RSS 
 	{
 		private RssFeed rssFeed;
 		private string title;
