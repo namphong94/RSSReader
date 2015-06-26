@@ -1,9 +1,0 @@
-/Users/xamarin/RSSReader/Reader/Reader.iOS/obj/iPhone/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
-/Users/xamarin/RSSReader/Reader/Reader.iOS/obj/iPhone/Debug/ibtool/LaunchScreen.nib
-/Users/xamarin/RSSReader/Reader/Reader.iOS/obj/iPhone/Debug/actool/partial-info.plist
-/Users/xamarin/RSSReader/Reader/Reader.iOS/obj/iPhone/Debug/actool/asset-manifest.plist
-/Users/xamarin/RSSReader/Reader/Reader.iOS/obj/iPhone/Debug/
-/Users/xamarin/RSSReader/Reader/Reader.iOS/bin/iPhone/Debug/Reader.iOS.exe.mdb
-/Users/xamarin/RSSReader/Reader/Reader.iOS/bin/iPhone/Debug/Reader.iOS.exe
-/Users/xamarin/RSSReader/Reader/Reader.iOS/obj/iPhone/Debug/Reader.iOS.exe
-/Users/xamarin/RSSReader/Reader/Reader.iOS/obj/iPhone/Debug/Reader.iOS.exe.mdb

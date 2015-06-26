@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.rssreader.android">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19" />
+  <application android:label="RssReader.Android" android:name="mono.android.app.Application" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:label="Reader" android:theme="@style/CustomActionBarTheme" android:name="md5416e3c79fe7bd3f6a76f1cd9329f85bd.MainActivity" />
+    <activity android:label="webViewActivity" android:name="md5416e3c79fe7bd3f6a76f1cd9329f85bd.webViewActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.rssreader.android.mono.MonoRuntimeProvider.__mono_init__" />
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.rssreader.android" />
+      </intent-filter>
+    </receiver>
+    <activity android:icon="@drawable/icon" android:label="Reader" android:theme="@style/Mono.Android.Theme.Splash" android:name="com.companyname.rssreader.android.TrialSplashScreen" android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+</manifest>
